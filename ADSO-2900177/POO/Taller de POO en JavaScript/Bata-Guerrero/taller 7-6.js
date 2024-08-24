@@ -52,4 +52,32 @@ biblioteca.añadirLibro(libro3);
 
 biblioteca.mostrarLibros();
 
+// Ejercicios POO
+
+/**
+ * Ejercicio 6: Constructores Múltiples (Simulación)
+Objetivo: Simular constructores múltiples.
+• Modifica la clase Libro (como el ejemplo anterior) para que acepte un título y autor opcionalmente, o use valores por defecto.
+• Crea instancias de Libro utilizando diferentes combinaciones de parámetros y muestra los detalles.
+ */
+
+class Libro {
+    constructor(titulo = "Título desconocido", autor = "Autor desconocido") {
+        this.titulo = titulo;
+        this.autor = autor;
+    }
+
+    mostrarDetalles() {
+        console.log(`Título: ${this.titulo}, Autor: ${this.autor}`);
+    }
+}
+
+const libro1 = new Libro("Niebla", "Miguel Unamuno"); 
+const libro2 = new Libro("Cien años de soledad"); 
+const libro3 = new Libro(); 
+
+
+libro1.mostrarDetalles(); 
+libro2.mostrarDetalles(); 
+libro3.mostrarDetalles(); 
 
